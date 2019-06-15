@@ -1,3 +1,4 @@
+const container = document.querySelector('.container');
 const game = document.querySelector('#game-body');
 const intro = document.querySelector('#game-intro');
 const startBtn = document.getElementById('start-btn');
@@ -113,7 +114,7 @@ function startGame(){
 
 
 
-    // Replay Function 
+    // Replay Function
    game.addEventListener('mousedown', function(e) {
      if (e.target.value === 'play it again') {
        window.location.reload();
@@ -142,7 +143,6 @@ function startGame(){
      // Replay?
      // guessBtn.setAttribute('value', 'Replay');
      guessBtn.value = 'play it again';
-    
    }
  }
 
